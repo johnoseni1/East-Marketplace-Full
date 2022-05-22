@@ -15,7 +15,7 @@ contract NFT is ERC721URIStorage {
 
     event TokenMinted(uint256 indexed tokenId, string tokenURI, address marketplaceAddress);
 
-    constructor(address _marketplaceAddress) ERC721("MarkKop", "MARK") {
+    constructor(address _marketplaceAddress) ERC721("EastToken", "EST") {
         marketplaceAddress = _marketplaceAddress;
     }
 

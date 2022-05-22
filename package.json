@@ -12,7 +12,8 @@
     "deploy:mumbai": "hardhat run scripts/deploy.js --network mumbai",
     "setup-marketplace:localhost": "hardhat run scripts/setupMarket.js --network localhost",
     "setup-marketplace:mumbai": "hardhat run scripts/setupMarket.js --network mumbai",
-    "setup": "npm run deploy:localhost && npm run setup-marketplace:localhost",
+    "setup-real": "npm run deploy:localhost && npm run setup-marketplace:localhost",
+    "setup": "npm run deploy:mumbai && npm run setup-marketplace:mumbai",
     "env": "hardhat run scripts/updateVercelEnviromentKeys.js --network mumbai"
   },
   "dependencies": {
@@ -42,6 +43,7 @@
     "react-dom": "17.0.2",
     "react-hook-form": "^7.24.1",
     "react-infinite-scroll-component": "^6.1.0",
+    "sharp": "^0.30.4",
     "web3modal": "^1.9.5"
   },
   "devDependencies": {
